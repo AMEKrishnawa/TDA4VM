@@ -22,7 +22,11 @@ Clone the repo:
 git clone https://git.ti.com/git/arago-project/oe-layersetup.git
 cd oe-layersetup
 ```
-# 4.Install UTF-8
+# 4.Set the build folder according to the MACHINE and Version
+```bash
+MACHINE=j721e-evm ./oe-layertool-setup.sh -f configs/arago-scarthgap-config.txt
+```
+# 5.Install UTF-8
 ```bash
 sudo locale-gen en_US.UTF-8
 sudo update-locale LANG=en_US.UTF-8
@@ -51,12 +55,15 @@ LC_MEASUREMENT="en_US.UTF-8"
 LC_IDENTIFICATION="en_US.UTF-8"
 LC_ALL=en_US.UTF-8
 ```
-# 5.Set board environment in within your current shell session
+# 6.Set board environment in within your current shell session
 go to build folder and set the environment
 ```bash
 cd ~/yocto/oe-layersetup/build
 source conf/setenv
 ```
+
+
+
 ## Replace the board name on the 'setenv' file
 ```bash
 sudo gedit conf/local.conf
@@ -80,12 +87,18 @@ And it will show something like this
 ```bash
 BitBake Build Tool Core version 2.8.1
 ```
-# 6. Build the image
+# 7. Build the image
 
 
 ```bash
-bitbake tisdk-default-image -fk
+bitbake tisdk-default-image -fk 
 ```
+or 
+
+```bash
+bitbake core-image-minimal -fk 
+```
+
 `-f`: force
 `-k`: Keep going
 
