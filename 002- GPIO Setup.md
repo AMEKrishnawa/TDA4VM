@@ -68,10 +68,10 @@ Add this below on `&main_pmx0`
         >;
     };
 };
+```
 
 [Use this link to enable GPIO64 (on board LED)](https://e2e.ti.com/support/processors-group/processors/f/processors-forum/1686130/tda4vm-j721e-evm-gpio0_64-configured-via-gpio-leds-but-it-always-stays-low-and-cannot-be-controlled/6498365)
 
-```
 
 ---
 # 7. Compile the 'k3-j721e-sk.dts' file to 'k3-j721e-sk.dtb'
