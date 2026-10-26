@@ -35,6 +35,26 @@ sudo dpkg-reconfigure dash
 ```
 it will build the **source** and **build** folder.
 
+If the following repos are not cloning `https://git.ti.com/git/ti-sdk-linux/meta-tisdk.git` and `https://git.ti.com/git/edgeai/meta-edgeai.git`
+
+Downlod it manually to the `source` folder
+
+```bash
+cd source 
+```
+```bash
+git clone --single-branch --branch scarthgap \
+https://git.ti.com/git/ti-sdk-linux/meta-tisdk.git
+```
+```bash
+git clone --single-branch --branch scarthgap \
+https://git.ti.com/git/edgeai/meta-edgeai.git
+```
+and run again 
+```bash
+./oe-layertool-setup.sh -f configs/processor-sdk-analytics/processor-sdk-analytics-11.00.00-config.txt
+```
+
 ## Replace the board name on the 'setenv' file
 ```bash
 sudo gedit build/conf/local.conf
