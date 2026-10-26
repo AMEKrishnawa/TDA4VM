@@ -52,6 +52,7 @@ https://git.ti.com/git/edgeai/meta-edgeai.git
 ```
 and run again 
 ```bash
+cd ..
 ./oe-layertool-setup.sh -f configs/processor-sdk-analytics/processor-sdk-analytics-11.00.00-config.txt
 ```
 
