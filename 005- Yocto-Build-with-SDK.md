@@ -37,10 +37,10 @@ it will build the **source** and **build** folder.
 
 If the following repos are not cloning `https://git.ti.com/git/ti-sdk-linux/meta-tisdk.git` and `https://git.ti.com/git/edgeai/meta-edgeai.git`
 
-Downlod it manually to the `source` folder
+Downlod it manually to the `sources` folder
 
 ```bash
-cd source 
+cd sources 
 ```
 ```bash
 git clone --single-branch --branch scarthgap \
