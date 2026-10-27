@@ -21,6 +21,13 @@ sudo apt-get -f -y install \
 sudo locale-gen en_US.UTF-8
 ```
 
+```bash
+sudo apt install g++
+sudo apt install gcc
+sudo apt install make        # version 4.3-4.1build1, or
+sudo apt install make-guile  # version 4.3-4.1build1
+```
+
 **By default Ubuntu uses “dash” as the default shell for /bin/sh. You must reconfigure to use bash by running the following command:**
 
 ```bash
